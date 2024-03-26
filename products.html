@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <div class="header_inner">
+          <div class="logo_and_name">
+            <a class="logo_link" href="index.html"
+              ><img
+                src="images/logo.svg"
+                alt="Логотип компании"
+                class="logo_image"
+            /></a>
+            <a href="index.html"
+              ><p class="company_name">Mobile Universe</p></a
+            >
+          </div>
+          <nav class="menu">
+            <ul class="menu_list">
+              <li class="menu_list_item">
+                <a class="menu_list_item_link" href="index.html">Главная</a>
+              </li>
+              <li class="menu_list_item submenu_nav">
+                <a class="menu_list_item_link" href="products.html">Каталог</a
+                ><span
+                  ><img
+                    class="down_arrow_image"
+                    src="images/down_arrow1.svg"
+                    alt="Стрелка вниз"
+                    width="13"
+                    height="15"
+                /></span>
+                <div class="submenu">
+                  <ul class="submenu_items">
+                    <li class="submenu_item"><a href="#">Apple</a></li>
+                    <li class="submenu_item"><a href="#">Samsung</a></li>
+                    <li class="submenu_item"><a href="#">Nothing</a></li>
+                    <li class="submenu_item"><a href="#">Realme</a></li>
+                    <li class="submenu_item"><a href="#">Xiaomi</a></li>
+                    <li class="submenu_item"><a href="#">Oppo</a></li>
+                    <li class="submenu_item"><a href="#">Honor</a></li>
+                    <li class="submenu_item"><a href="#">Infinix</a></li>
+                    <li class="submenu_item"><a href="#">Huawei</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu_list_item">
+                <a class="menu_list_item_link" href="about.html"
+                  >О компании</a
+                >
+              </li>
+              <li class="menu_list_item">
+                <a class="menu_list_item_link" href="reviews.html">Отзывы</a>
+              </li>
+              <li class="menu_list_item">
+                <a class="menu_list_item_link" href="card_registration.html">Бонусы</a>
+              </li>
+            </ul>
+            
+          </nav>
+          <div class="cart_container">
+            <a href="cart.html" class="cart_link"
+              ><img
+                src="images/cart.svg"
+                alt="cart"
+                class="cart_icon"
+                width="30"
+                height="30"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<main>
+    <div class="container">
+      <div class="products_container">
+        <div class="product_card">
+          <a href="product_1.html"><img src="images/iphone13.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/iphone13_1.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="product_1.html"> <h3 class="product_card_name">Apple iPhone 13</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">67 999 ₽</p>
+          <a href="product_1.html" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="product_2.html"><img src="images/iphone15promax.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/iphone15promax_1.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="product_2.html"> <h3 class="product_card_name">Apple iPhone 15 Pro Max</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">149 999 ₽</p>
+          <a href="product_2.html" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="product_3.html"><img src="images/iphone15pro.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/iphone15pro_1.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="product_3.html"> <h3 class="product_card_name">Apple iPhone 15 Pro</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">135 999 ₽</p>
+          <a href="product_3.html" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="product_4.html"><img src="images/nothing.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/nothing_1.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="product_4.html"> <h3 class="product_card_name">Nothing Phone 2</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">66 299 ₽</p>
+          <a href="product_4.html" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/samsung1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/samsung1_1.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Samsung S24 Ultra</h3></a>
+          <p class="product_availability preorder">Предзаказ</p>
+          <p class="product_card_price">146 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/samsung2.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/samsung2_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Samsung S24</h3></a>
+          <p class="product_availability preorder">Предзаказ</p>
+          <p class="product_card_price">97 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/samsung3.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/samsung3_3.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Samsung S23 FE</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">64 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/xiaomi.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/xiaomi_1.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Xiaomi Redmi 12</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">14 499 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/oppo.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/oppo_1.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">OPPO Reno8 T</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">21 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/nothing1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/nothing1_1.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Nothing Phone 1</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">38 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/honor90_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/honor90_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">HONOR 90 LITE</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">22 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/realme11_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/realme11_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Realme 11</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">16 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/xiaomi14_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/xiaomi14_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Xiaomi 14</h3></a>
+          <p class="product_availability preorder">Предзаказ</p>
+          <p class="product_card_price">99 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/huawei_nova_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/huawei_nova_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">HUAWEI nova 11 pro</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">39 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/infinix_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/infinix_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Infinix HOT 40i</h3></a>
+          <p class="product_availability no">Отсутствует в продаже</p>
+          <p class="product_card_price">11 899 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/realme_note_50_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/realme_note_50_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Realme Note 50</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">6 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/realme_c51_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/realme_c51_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Realme C51</h3></a>
+          <p class="product_availability no">Отсутствует в продаже</p>
+          <p class="product_card_price">8 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/honor_x9b_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/honor_x9b_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">HONOR X9b</h3></a>
+          <p class="product_availability no">Отсутствует в продаже</p>
+          <p class="product_card_price">30 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/iphone12_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/iphone12_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Apple iPhone 12</h3></a>
+          <p class="product_availability yes">В наличии</p>
+          <p class="product_card_price">59 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+        <div class="product_card">
+          <a href="#"><img src="images/realme_c53_1.jpg" alt="" class="product_card_image" onmouseenter="changeImage(this, 'images/realme_c53_2.jpg')" onmouseleave="resetImage(this)"></a>
+          <a href="#"> <h3 class="product_card_name">Realme C53</h3></a>
+          <p class="product_availability no">Отсутствует в продаже</p>
+          <p class="product_card_price">9 999 ₽</p>
+          <a href="#" class="more_info">подробнее</a>
+          <button class="buy">Купить</button>
+          <button class="add_to_cart">Добавить в корзину</button>
+        </div>
+      </div>
+    </div>
+</main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_menu">
+                <ul class="footer_menu_list">
+                    <p class="footer_menu_title">Контакты</p>
+                    <li class="footer_menu_item">г. Москва, ул. Рогожский Вал 9/2, 109544</li>
+                    <li class="footer_menu_item">8-800-125-40-33</li>
+                    <ul class="social">
+                        <li class="social_item">
+                            <a href="#" class="social_item_link"><img src="images/telegram.svg" alt="Телеграм" class="social_item_image"></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="#" class="social_item_link"><img src="images/vk.svg" alt="ВКонтакте" class="social_item_image"></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="#" class="social_item_link"><img src="images/youtube.svg" alt="Youtube" class="social_item_image"></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="#" class="social_item_link"><img src="images/twitter.svg" alt="Twitter" class="social_item_image"></a>
+                        </li>
+                        
+                    </ul>
+                </ul>
+                <ul class="footer_menu_list">
+                    <p class="footer_menu_title">Компания</p>
+                    <li class="footer_menu_item"><a href="#">Об интернет-магазине</a></li>
+                    <li class="footer_menu_item"><a href="#">Новости</a></li>
+                    <li class="footer_menu_item"><a href="#">Персональные данные</a></li>
+                    <li class="footer_menu_item"><a href="#">Правила продаж</a></li>
+                    <li class="footer_menu_item"><a href="#">Для бизнеса</a></li>
+                </ul>
+                <ul class="footer_menu_list">
+                    <p class="footer_menu_title">Помощь и поддержка</p>
+                    <li class="footer_menu_item"><a href="#">Доставка</a></li>
+                    <li class="footer_menu_item"><a href="#">Способы оплаты</a></li>
+                    <li class="footer_menu_item"><a href="#">Банковская карта</a></li>
+                    <li class="footer_menu_item"><a href="#">Гарантии</a></li>
+                    <li class="footer_menu_item"><a href="#">Статус заказа</a></li>
+                    <li class="footer_menu_item"><a href="#">Кредиты</a></li>
+                    <li class="footer_menu_item"><a href="#">Как оформить заказ</a></li>
+                    <li class="footer_menu_item"><a href="#">Договор оферты</a></li>
+                    <li class="footer_menu_item"><a href="#">Помощь</a></li>
+                </ul>
+                <ul class="footer_menu_list">
+                    <p class="footer_menu_title">Ваши привелегии</p>
+                    <li class="footer_menu_item"><a href="#">Акции</a></li>
+                    <li class="footer_menu_item"><a href="#">Баланс бонусной карты</a></li>
+                    <li class="footer_menu_item"><a href="#">Бонусная программа</a></li>
+                    <li class="footer_menu_item"><a href="#">Купоны и сертификаты</a></li>
+                    <li class="footer_menu_item"><a href="#">Подарочная карта</a></li>
+                    <li class="footer_menu_item"><a href="#">Обратная связь</a></li>
+                </ul>
+            </div>
+            <p class="footer_copy_text">© 2012-2024 Mobile Universe. Все права защищены.</p>
+        </div>
+    </footer>
+  </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

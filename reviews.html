@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзывы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header_inner">
+            <div class="logo_and_name">
+              <a class="logo_link" href="index.html"
+                ><img
+                  src="images/logo.svg"
+                  alt="Логотип компании"
+                  class="logo_image"
+              /></a>
+              <a href="index.html"
+                ><p class="company_name">Mobile Universe</p></a
+              >
+            </div>
+            <nav class="menu">
+              <ul class="menu_list">
+                <li class="menu_list_item">
+                  <a class="menu_list_item_link" href="index.html">Главная</a>
+                </li>
+                <li class="menu_list_item submenu_nav">
+                  <a class="menu_list_item_link" href="products.html">Каталог</a
+                  ><span
+                    ><img
+                      class="down_arrow_image"
+                      src="images/down_arrow1.svg"
+                      alt="Стрелка вниз"
+                      width="13"
+                      height="15"
+                  /></span>
+                  <div class="submenu">
+                    <ul class="submenu_items">
+                      <li class="submenu_item"><a href="#">Apple</a></li>
+                      <li class="submenu_item"><a href="#">Samsung</a></li>
+                      <li class="submenu_item"><a href="#">Nothing</a></li>
+                      <li class="submenu_item"><a href="#">Realme</a></li>
+                      <li class="submenu_item"><a href="#">Xiaomi</a></li>
+                      <li class="submenu_item"><a href="#">Oppo</a></li>
+                      <li class="submenu_item"><a href="#">Honor</a></li>
+                      <li class="submenu_item"><a href="#">Infinix</a></li>
+                      <li class="submenu_item"><a href="#">Huawei</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu_list_item">
+                  <a class="menu_list_item_link" href="about.html"
+                    >О компании</a
+                  >
+                </li>
+                <li class="menu_list_item">
+                  <a class="menu_list_item_link" href="reviews.html">Отзывы</a>
+                </li>
+                <li class="menu_list_item">
+                  <a class="menu_list_item_link" href="card_registration.html">Бонусы</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="cart_container">
+              <a href="cart.html" class="cart_link"
+                ><img
+                  src="images/cart.svg"
+                  alt="cart"
+                  class="cart_icon"
+                  width="30"
+                  height="30"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="container">
+          <div class="reviews_container">
+            <div class="reviews_form_container">
+              <h2 class="reviews_form_header">Оставьте отзыв об устройстве</h2>
+              <form action="#" id="form">
+                <label for="input_name"> Введите имя </label>
+                <input
+                  type="text"
+                  id="input_name"
+                  class="input_form"
+                  placeholder="Имя"
+                />
+                <label for="input_email">
+                  Введите адрес электронной почты
+                </label>
+                <input
+                  type="email"
+                  id="input_email"
+                  class="input_form"
+                  placeholder="example@gmail.com"
+                />
+                <label for="input_device"> Введите модель устройства </label>
+                <input
+                  type="text"
+                  id="input_device"
+                  class="input_form"
+                  placeholder="Apple iPhone 12"
+                />
+                <label for="">Поставьте оценку устройству</label>
+                <div class="rating" id="rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">&#9733;</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">&#9733;</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">&#9733;</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">&#9733;</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">&#9733;</label>
+                </div>
+                <label for="text_form"> Введите текст отзыва </label>
+                <textarea id="text_form" cols="30" rows="10"></textarea>
+                <label>Прикрепите фото товара</label>
+                <div class="file-input-wrapper">
+                  <button class="custom-file-button">Выбрать файлы</button>
+                  <input type="file" multiple id="fileInput" />
+                  <div id="fileList"></div>
+                </div>
+                <button class="button_form">Отправить</button>
+              </form>
+            </div>
+
+            <div id="popup" class="popup hidden">
+              <p class="popup_text">Ваш отзыв отправлен!</p>
+            </div>
+
+            <div class="review_items">
+              <h2 class="review_customers">Отзывы других покупателей</h2>
+              <div class="review_item">
+                <span class="review_item_name">Анатолий</span>
+                <span class="review_item_date">20 мая 2023</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9733;</span>
+                  <span id="rating_number">5,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Apple iPhone 12</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Я в восторге от своего нового iPhone 12! Устройство поражает
+                    своей производительностью и качеством сборки. Камера делает
+                    потрясающие снимки, а дисплей воспроизводит яркие и
+                    насыщенные цвета. Очень доволен своим выбором!
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Евгений</span>
+                <span class="review_item_date">19 апреля 2019</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9733;</span>
+                  <span id="rating_number">5,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Apple iPhone 13</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Перешел на iPhone 13 с iPhone 12 и не мог быть счастливее!
+                    Улучшенная производительность и длительное время работы
+                    аккумулятора делают его идеальным для моих повседневных
+                    задач. Камера также заметно улучшилась, особенно в условиях
+                    низкого освещения.
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Максим</span>
+                <span class="review_item_date">13 августа 2020</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9733;</span>
+                  <span id="rating_number">5,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Apple iPhone 15 Pro</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    iPhone 15 Pro - это просто мечта любого гика! Мощный
+                    процессор, превосходная камера и красивый OLED-дисплей
+                    делают его идеальным выбором для тех, кто ценит качество и
+                    производительность.
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Анастасия</span>
+                <span class="review_item_date">8 марта 2024</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9733;</span>
+                  <span id="rating_number">5,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Apple iPhone 15 Pro Max</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Моя новая жизнь началась с iPhone 15 Pro Max! Он превзошел
+                    все мои ожидания. Огромный экран, продолжительное время
+                    работы аккумулятора и потрясающая камера делают его моим
+                    незаменимым спутником в повседневной жизни.
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Антон</span>
+                <span class="review_item_date">12 апреля 2013</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9734;</span>
+                  <span id="rating_number">4,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Nothing Phone 1</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Nothing Phone 1 - это действительно нечто особенное. Я
+                    выбрал его из-за его простоты и чистоты. Отсутствие лишних
+                    функций и интерфейс, который не отвлекает, позволяют мне
+                    наслаждаться моментом и не теряться в приложениях.
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Олег</span>
+                <span class="review_item_date">20 ноября 2022</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9733;</span>
+                  <span id="rating_number">5,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Xiaomi 14</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Xiaomi 14 - это удивительное сочетание высоких технологий и
+                    доступной цены. Я впечатлен его быстродействием и качеством
+                    сборки. Отличный выбор для тех, кто ценит функциональность
+                    без излишеств.
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Людмила</span>
+                <span class="review_item_date">14 октября 2018</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9734;</span>
+                  <span id="rating_number">4,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Samsung S24 Ultra</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Samsung S24 Ultra - это просто флагманский смартфон! Его
+                    мощный процессор, потрясающий дисплей и многофункциональная
+                    камера делают его идеальным для любых задач, от работы до
+                    развлечений.
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Михаил</span>
+                <span class="review_item_date">7 мая 2021</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9734;</span>
+                  <span id="rating_5">&#9734;</span>
+                  <span id="rating_number">3,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Realme 11</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Realme 11 - это отличный смартфон по доступной цене. Он
+                    обладает хорошей производительностью и качеством камеры, что
+                    делает его привлекательным выбором для тех, кто ищет
+                    бюджетное решение без ущерба качеству. Однако разочаровала
+                    скорость работы процессора.
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Валерия</span>
+                <span class="review_item_date">27 сентября 2019</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9733;</span>
+                  <span id="rating_number">5,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Huawei Nova 11 Pro</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Huawei Nova 11 Pro - это идеальный смартфон для тех, кто
+                    ценит стильный дизайн и высокую производительность. Его
+                    камера делает потрясающие снимки, а мощный процессор
+                    обеспечивает плавную работу приложений.
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Екатерина</span>
+                <span class="review_item_date">23 мая 2021</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9733;</span>
+                  <span id="rating_number">5,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Honor X9b</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Honor X9b - это отличный смартфон с хорошим соотношением
+                    цены и качества. Его производительность удовлетворяет мои
+                    потребности, а камера делает качественные снимки. Очень
+                    довольна своим выбором!
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Андрей</span>
+                <span class="review_item_date">21 июня 2016</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9734;</span>
+                  <span id="rating_number">4,0</span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Samsung S23 FE</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Samsung S23 FE - это отличный смартфон для тех, кто ищет
+                    баланс между ценой и качеством. Его производительность и
+                    камера впечатляют, а стильный дизайн делает его приятным в
+                    использовании.
+                  </p>
+                </div>
+              </div>
+              <div class="review_item">
+                <span class="review_item_name">Даниил</span>
+                <span class="review_item_date">4 июля 2023</span>
+                <div class="review_item_rating">
+                  <span id="rating_1">&#9733;</span>
+                  <span id="rating_2">&#9733;</span>
+                  <span id="rating_3">&#9733;</span>
+                  <span id="rating_4">&#9733;</span>
+                  <span id="rating_5">&#9734;</span>
+                  <span id="rating_number" 4,0></span>
+                </div>
+                <div class="device_model">
+                  <span class="model">Модель:</span>
+                  <span class="model_name">Nothing Phone 2</span>
+                </div>
+                <div class="comment_area">
+                  <p class="comment_text">
+                    Nothing Phone 2 - это именно то, что я искал! Простота,
+                    элегантность и надежность объединены в этом устройстве. Я
+                    ценю его минималистичный дизайн и долгое время работы
+                    аккумулятора. Идеальный выбор для тех, кто ищет освобождение
+                    от лишних функций.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="show_more">Смотреть еще</button>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="footer_menu">
+            <ul class="footer_menu_list">
+              <p class="footer_menu_title">Контакты</p>
+              <li class="footer_menu_item">
+                г. Москва, ул. Рогожский Вал 9/2, 109544
+              </li>
+              <li class="footer_menu_item">8-800-125-40-33</li>
+              <ul class="social">
+                <li class="social_item">
+                  <a href="#" class="social_item_link"
+                    ><img
+                      src="images/telegram.svg"
+                      alt="Телеграм"
+                      class="social_item_image"
+                  /></a>
+                </li>
+                <li class="social_item">
+                  <a href="#" class="social_item_link"
+                    ><img
+                      src="images/vk.svg"
+                      alt="ВКонтакте"
+                      class="social_item_image"
+                  /></a>
+                </li>
+                <li class="social_item">
+                  <a href="#" class="social_item_link"
+                    ><img
+                      src="images/youtube.svg"
+                      alt="Youtube"
+                      class="social_item_image"
+                  /></a>
+                </li>
+                <li class="social_item">
+                  <a href="#" class="social_item_link"
+                    ><img
+                      src="images/twitter.svg"
+                      alt="Twitter"
+                      class="social_item_image"
+                  /></a>
+                </li>
+              </ul>
+            </ul>
+            <ul class="footer_menu_list">
+              <p class="footer_menu_title">Компания</p>
+              <li class="footer_menu_item">
+                <a href="#">Об интернет-магазине</a>
+              </li>
+              <li class="footer_menu_item"><a href="#">Новости</a></li>
+              <li class="footer_menu_item">
+                <a href="#">Персональные данные</a>
+              </li>
+              <li class="footer_menu_item"><a href="#">Правила продаж</a></li>
+              <li class="footer_menu_item"><a href="#">Для бизнеса</a></li>
+            </ul>
+            <ul class="footer_menu_list">
+              <p class="footer_menu_title">Помощь и поддержка</p>
+              <li class="footer_menu_item"><a href="#">Доставка</a></li>
+              <li class="footer_menu_item"><a href="#">Способы оплаты</a></li>
+              <li class="footer_menu_item"><a href="#">Банковская карта</a></li>
+              <li class="footer_menu_item"><a href="#">Гарантии</a></li>
+              <li class="footer_menu_item"><a href="#">Статус заказа</a></li>
+              <li class="footer_menu_item"><a href="#">Кредиты</a></li>
+              <li class="footer_menu_item">
+                <a href="#">Как оформить заказ</a>
+              </li>
+              <li class="footer_menu_item"><a href="#">Договор оферты</a></li>
+              <li class="footer_menu_item"><a href="#">Помощь</a></li>
+            </ul>
+            <ul class="footer_menu_list">
+              <p class="footer_menu_title">Ваши привелегии</p>
+              <li class="footer_menu_item"><a href="#">Акции</a></li>
+              <li class="footer_menu_item">
+                <a href="#">Баланс бонусной карты</a>
+              </li>
+              <li class="footer_menu_item">
+                <a href="#">Бонусная программа</a>
+              </li>
+              <li class="footer_menu_item">
+                <a href="#">Купоны и сертификаты</a>
+              </li>
+              <li class="footer_menu_item"><a href="#">Подарочная карта</a></li>
+              <li class="footer_menu_item"><a href="#">Обратная связь</a></li>
+            </ul>
+          </div>
+          <p class="footer_copy_text">
+            © 2012-2024 Mobile Universe. Все права защищены.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/addFile.js"></script>
+  </body>
+</html>
